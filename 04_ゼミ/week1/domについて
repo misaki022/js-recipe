@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+   <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domについて</title>
+  </head>
+  <body>
+<h1>domについて</h1>
+<div id="youso">ここの内容が変わるよ！！</div>
+<buttom id ="buttom">押せば変わる</bottom>
+<script>
+//htmlからidを使って　要素を取得するコード
+const element =document,getelementbyid("yoso")
+console.log(element);
+
+//要素の決められたプロパティの値を書き換えると、domを介して
+//element.textcontent ="domを通じて変えたよ！"
+
+//イベントが起きたタイミングでコードを実行する方法
+butten.onclick = function(){
+    element.textcontent ="domを通じて変えたよ！"
+}
