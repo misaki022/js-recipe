@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="display-count">0</div>
+    <button id="button-count-up">+1</button>
+    <button id="button-dengen">電源ON</button>
+
+    <div id="display-rireki"></div>
+    const displayCount = document.getElementByid ("display-count") const
+    displayCount = document.getElementByid ("button-count-up") const
+    displayCount = document.getElementByid ("button-dengn") const displayCount =
+    document.getElementByid ("display-rireki") //　状態　変数で全て表す let
+    count = 0 let dengen =false 　 buttonDengen.onclic = function(){ dengen =
+    !dengen buttonDengen.textContent = dengen?"電源OFF":"電源ON" }
+    buttoneCountUp.onclick = function(){ if(dengen){ count++
+    displayCount.textContent = count const div =
+    document.createElementByid("div") div.textContent = "□".repeat(count)
+    displayRireki.append("div) } } buttonConutDown.onclick =function(){
+    if(dengen){ count++ } }
+  </body>
+</html>

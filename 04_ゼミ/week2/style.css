@@ -1,0 +1,33 @@
+div {
+  border: 1px solid _ black;
+  width: 200px;
+}
+p {
+  display: inline;
+  border: 1px solid _ black;
+}
+span {
+  display: block;
+  border: 1px solid _ black;
+  width: 200px;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.children {
+  width: 10px;
+  height: 100px;
+  border: 1px solid _ black;
+}
+button {
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  position: fixed;
+}
