@@ -22,3 +22,32 @@ console.log(element);
 butten.onclick = function(){
     element.textcontent ="domを通じて変えたよ！"
 }
+
+<h1>javascriptの様々な値とデータ型</h1>
+<script>
+      //number型
+      console.log(1)
+      console.log(1 +2)
+      //文字型
+      console.log("やっほー")
+      console.log("やっほー"+ "ヤッホー")
+
+      //true or false
+      console.log(true);
+      const x = 2;
+      const boolean_test = x ===2; //true,比較演算子を使って
+      console.log(boolean_test)
+  //オブジェクト
+  const name ="みさき"
+  const age =20;
+  const misaki={
+      name:"みさき", //キー:バリュー　＝＞プロパティ
+      age: 20,
+      hobbies: ["バイオリン","ギター",]
+      family: {
+          mamaname:"ゆうり"}, //オブジェクトの中にオブジェクトがとれる
+      },
+  console.log("misaki");
+  console.log(misaki.name);
+</script>
+</html>

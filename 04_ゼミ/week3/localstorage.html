@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ローカルストレージとは</title>
+  </head>
+  <body>
+    <script>
+      //ブラウザに文字列を保存する機能（オブジェクト）
+      const Name = localstorage.name
+      cosole.log(Name)
+      localStorage.name = "ともぞう"
+
+      const memos = ["おはよう", "こんにちは"]
+      localStorage.memos = memos
+      console.log(Memos)
+      console.log(localStorage.memos)
+
+      //jsonを使ってローカルストレージ
+
+      localStorage.memos = JSON.stringify(Memos)
+      console.log(localStorage.memos);
+      const jsonbackmemos = JSON.rars(localStorage.memos);
+      console.log("jsonでローカルストレージに保存したものをもってきたもの");
+      //parsonはもとの配列に戻す
+
+      //まとめ　localStorage=ブラウザに値(文字列や配列を)文字列として保存できる場所→
+      更新しても消えない
+      localStorageの見方
+      ↓検証ツール→Applicationから見れる
+      保存方法↓localStorage.key名="保存したい中身"
+      注意点保存されたものは文字列になってしまう
+      JSON　配列やオブジェクトをそのまま文字列化したもの
+      JSON.stringify()→中身をJSON形式にする
+      JSON.parse()→でJSON形式として保存されていた配列やオブジェクトを使えるようにする
+    </script>
+  </body>
+</html>

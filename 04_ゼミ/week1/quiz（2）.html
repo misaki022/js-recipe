@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>私の趣味はなんでしょう？</h1>
+    <button id="mondai1">ピアノ</button>
+    <button id="mondai2">剣道</button>
+    <button id="mondai3">料理</button>
+
+    <div id="bunsyou">答えは。。？</div>
+    <script>
+      const element1 = document.getElementById("mondai1")
+      const element2 = document.getElementById("mondai2")
+      const element3 = document.getElementById("mondai3")
+      const Bunsyou = document.getElementById("bunsyou")
+
+      element1.onclick = function () {
+        Bunsyou.textContent = "正解"
+      }
+      element2.onclick = function () {
+        Bunsyou.textContent = "外れ"
+      }
+      element3.onclick = function () {
+        Bunsyou.textContent = "外れ"
+      }
+    </script>
+  </body>
+</html>

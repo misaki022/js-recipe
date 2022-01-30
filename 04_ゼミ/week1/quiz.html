@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <h1>私の趣味はなんでしょう？</h1>
+    <button id="mondai1">料理</button>
+    <!-- <div id="kotae">正解！</div> -->
+    <button id="mondai2">筋トレ</button>
+    <!-- <div id="">間違い！筋トレは苦手です...</div> -->
+    <button id="mondai3">ギター</button>
+    <!-- <div id="">間違い！ギターよりも料理が好きです！</div> -->
+    <div id="kotae">答えは。。？</div>
+    <script>
+      const element1 = document.getElementById("mondai1")
+      const element2 = document.getElementById("mondai2")
+      const element3 = document.getElementById("mondai3")
+      const Kotae = document.getElementById("kotae")
+      // console.log(element1);
+      // console.dir(element1);
+      element1.onclick = function () {
+        Kotae.textContent = "正解！！"
+      }
+
+      element2.onclick = function () {
+        Kotae.textContent = "間違い！筋トレは苦手です..."
+      }
+
+      element3.onclick = function () {
+        Kotae.textContent = "間違い！ギターよりも料理が好きです！"
+      }
+    </script>
+  </body>
+</html>
