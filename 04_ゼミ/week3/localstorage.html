@@ -21,12 +21,12 @@
       //jsonを使ってローカルストレージ
 
       localStorage.memos = JSON.stringify(Memos)
-      console.log(localStorage.memos);
-      const jsonbackmemos = JSON.rars(localStorage.memos);
-      console.log("jsonでローカルストレージに保存したものをもってきたもの");
+      console.log(localStorage.memos)
+      const jsonbackmemos = JSON.rars(localStorage.memos)
+      console.log("jsonでローカルストレージに保存したものをもってきたもの")
       //parsonはもとの配列に戻す
 
-      //まとめ　localStorage=ブラウザに値(文字列や配列を)文字列として保存できる場所→
+      /*まとめ　localStorage=ブラウザに値(文字列や配列を)文字列として保存できる場所→
       更新しても消えない
       localStorageの見方
       ↓検証ツール→Applicationから見れる
@@ -35,6 +35,7 @@
       JSON　配列やオブジェクトをそのまま文字列化したもの
       JSON.stringify()→中身をJSON形式にする
       JSON.parse()→でJSON形式として保存されていた配列やオブジェクトを使えるようにする
+      */
     </script>
   </body>
 </html>

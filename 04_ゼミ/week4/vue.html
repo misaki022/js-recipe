@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>vueとは</h1>
+    <p>
+      jsのフレームワーク
+      <br />
+      domとデータの状態を自動で結びつける
+      <br />私たちはデータをいじるだけ ①CDN という方法で読み込む。②Vue.createApp
+      をする。(どこで Vue を使うかを書いてあげる) マスタッシュ構文！{{. }}
+      で囲われた部分ではJavaScript の式が使える！ data : 変数を書く場所methods:
+      関数を書く場所 v-on:click=“countUp”
+      で「クリックした時にcountUp関数を実行」できる
+    </p>
+    <script>
+      Vue.CreateApp{(
+          deta(){
+              return{
+                  count:0,
+              }
+          }
+      )}.mount("#app")
+    </script>
+  </body>
+</html>

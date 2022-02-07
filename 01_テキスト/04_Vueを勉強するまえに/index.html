@@ -25,6 +25,10 @@
           <div v-for="text in list">{{ text }}</div>
         </div>
       </div>
+      <div id="app">
+        <div>{{ message }}</div>
+        <button v-on:click="changeMessage">変更！</button>
+      </div>
     </section>
 
     <script src="https://unpkg.com/vue@next"></script>
