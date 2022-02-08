@@ -39,45 +39,40 @@
       const files = [
         {
           title: "index.html",
-          content: "index.htmlの内容です"
+          content: "index.htmlの内容です",
         },
         {
           title: "package.json",
-          content: "package.jsonの内容です"
+          content: "package.jsonの内容です",
         },
         {
           title: "sandbox.config.json",
-          content: "sandbox.config.jsonの内容です"
+          content: "sandbox.config.jsonの内容です",
         },
         {
           title: "style.css",
-          content: "style.cssの内容です"
-        }
-      ];
+          content: "style.cssの内容です",
+        },
+      ]
 
-      const fileNavigationList = document.getElementById(
-        "file-navigation-list"
-      );
-      const editingFileTitle = document.getElementById("editing-file-title");
-      const editingFileContent = document.getElementById(
-        "editing-file-content"
-      );
-      const addNewFileButton = document.getElementById("add-new-file-button");
-      const addNewFileInput = document.getElementById("add-new-file-input");
+      const fileNavigationList = document.getElementById("file-navigation-list")
+      const editingFileTitle = document.getElementById("editing-file-title")
+      const editingFileContent = document.getElementById("editing-file-content")
+      const addNewFileButton = document.getElementById("add-new-file-button")
+      const addNewFileInput = document.getElementById("add-new-file-input")
 
       addNewFileButton.onclick = function () {
         // 新しいファイルを作成する処理
-      };
+      }
 
       const loadFiles = function () {
         // filesを読み込む処理
         for (let i = 0; i < files.length; i++) {
-          const title =fileNavigationList.value;
+          const itle = fileNavigationList.value
+        }
 
-
-      };
-
-      loadFiles();
+        loadFiles()
+      }
     </script>
   </body>
 </html>

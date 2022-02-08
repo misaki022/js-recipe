@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vue チュートリアル</title>
+  </head>
+  <body>
+    <!-- 👇3.Vueと結びつけたタグの中でVueの構文が使える。👇 -->
+    <div id="app">
+      <section>{{ message }}</section>
+      <section>{{ text }}</section>
+      <section>
+        <input type="text" v-model="message" />
+      </section>
+    </div>
+
+    <!-- 👇1.CDN経由でscriptタグを使ってVueを読み込む👇 -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- 👇2.読み込んだ後の行でVue.createAppでインスタンスを作成👇 -->
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            message:
+              "Vue Devtoolsを使ってこのメッセージを書き換えてみましょう!",
+            text: "追加行",
+          }
+        },
+      }).mount("#app")
+    </script>
+  </body>
+</html>
