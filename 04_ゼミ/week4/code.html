@@ -25,54 +25,67 @@
         </button>
       </div>
       <nav>
-        <ul class="file-navigation__list" id="file-navigation-list"></ul>
+        <ul class="file-navigation__list" id="file-navigation-list">
+         
+        </ul>
       </nav>
     </div>
     <main class="file-content">
-      <h1 class="file-content__now-editing-file" id="editing-file-title"></h1>
-      <textarea
-        class="file-content__input-field"
-        id="editing-file-content"
-      ></textarea>
+      <h1 class="file-content__now-editing-file" id="editing-file-title">
+        </files>
+      </h1>
+      <textarea class="file-content__input-field" id="editing-file-content">
+</textarea
+      >
     </main>
     <script>
       const files = [
         {
           title: "index.html",
-          content: "index.htmlの内容です",
+          content: "index.htmlの内容です"
         },
         {
           title: "package.json",
-          content: "package.jsonの内容です",
+          content: "package.jsonの内容です"
         },
         {
           title: "sandbox.config.json",
-          content: "sandbox.config.jsonの内容です",
+          content: "sandbox.config.jsonの内容です"
         },
         {
           title: "style.css",
-          content: "style.cssの内容です",
-        },
-      ]
+          content: "style.cssの内容です"
+        }
+      ];
 
-      const fileNavigationList = document.getElementById("file-navigation-list")
-      const editingFileTitle = document.getElementById("editing-file-title")
-      const editingFileContent = document.getElementById("editing-file-content")
-      const addNewFileButton = document.getElementById("add-new-file-button")
-      const addNewFileInput = document.getElementById("add-new-file-input")
+      const fileNavigationList = document.getElementById(
+        "file-navigation-list"
+      );
+      const editingFileTitle = document.getElementById("editing-file-title");
+      const editingFileContent = document.getElementById(
+        "editing-file-content"
+      );
+      const addNewFileButton = document.getElementById("add-new-file-button");
+      const addNewFileInput = document.getElementById("add-new-file-input");
 
       addNewFileButton.onclick = function () {
         // 新しいファイルを作成する処理
-      }
+      };
 
       const loadFiles = function () {
+
         // filesを読み込む処理
         for (let i = 0; i < files.length; i++) {
-          const itle = fileNavigationList.value
+          const todo = document.createElement("li")
+          todo.className = "file-navigation__file"
+          todo.textContent = files[i].title
+          fileNavigationList.append(todo)
         }
+        editingFileTitle.textContent =files[0].title
+        editingFileContent.textContent = files[0].content
+      };
 
-        loadFiles()
-      }
+      loadFiles();
     </script>
   </body>
 </html>
