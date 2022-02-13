@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>国語{{ test1 }}点+算数{{ test2 }}点=合計{{ bunkei }}/div>
+    <script src="https://unpkg.com/vue@next" ></script>
+    <script>
+        Vue.createApp({
+            deta(){
+                return {
+                    test1:68,
+                    test2:70
+                }
+            }
+            computed:{
+                bunkei:function()
+            }
+        })
+    </script>
+</body>
+</html>
